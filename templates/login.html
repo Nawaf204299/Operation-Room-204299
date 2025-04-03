@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Operation Room</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            padding: 2em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 0.5em;
+            margin: 0.5em 0 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #0077cc;
+            color: white;
+            padding: 0.7em 2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Operation Room</h2>
+        <form action="/login" method="post">
+            <label>Username:</label><br>
+            <input type="text" name="username" required><br>
+            <label>Password:</label><br>
+            <input type="password" name="password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
